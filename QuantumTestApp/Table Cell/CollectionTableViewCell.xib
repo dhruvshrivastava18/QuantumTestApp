@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionTableViewCell" rowHeight="295" id="KGk-i7-Jjw" customClass="CollectionTableViewCell" customModule="QuantumTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="295"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="568" height="295"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-rf-wRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="200"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="CYp-Af-WWU"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tv6-Ui-Sh6">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="destructive" translatesAutoresizingMaskIntoConstraints="NO" id="iTd-ly-vqj">
+                        <rect key="frame" x="104" y="210" width="108" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Delete cart">
+                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlc-KH-DFT">
+                        <rect key="frame" x="220" y="210" width="97" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Checkout">
+                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Vu-mv-875"/>
+                    <constraint firstAttribute="trailing" secondItem="ghi-rf-wRZ" secondAttribute="trailing" id="ASi-RZ-gAt"/>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Aim-ld-2hz"/>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Csi-J1-yAP"/>
+                    <constraint firstItem="Qlc-KH-DFT" firstAttribute="top" secondItem="ghi-rf-wRZ" secondAttribute="bottom" constant="10" id="KM3-PT-2KI"/>
+                    <constraint firstItem="iTd-ly-vqj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="100" id="Qfn-zx-sCC"/>
+                    <constraint firstAttribute="trailing" secondItem="ghi-rf-wRZ" secondAttribute="trailing" id="Uqu-Bc-Edv"/>
+                    <constraint firstItem="Qlc-KH-DFT" firstAttribute="top" secondItem="ghi-rf-wRZ" secondAttribute="bottom" constant="10" id="Zah-It-7vp"/>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aC4-VC-2SX"/>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aIh-d7-qUn"/>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="csZ-bw-TsL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ghi-rf-wRZ" secondAttribute="bottom" constant="-25" id="gaT-DL-oTT"/>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gkO-Zp-JJk"/>
+                    <constraint firstItem="ghi-rf-wRZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hvo-Ar-fZ4"/>
+                    <constraint firstItem="iTd-ly-vqj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="200" id="nMo-53-KkJ"/>
+                    <constraint firstItem="iTd-ly-vqj" firstAttribute="top" secondItem="ghi-rf-wRZ" secondAttribute="bottom" constant="10" id="oxg-S9-ozf"/>
+                    <constraint firstAttribute="trailing" secondItem="ghi-rf-wRZ" secondAttribute="trailing" id="pH6-Ba-Tgd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="ghi-rf-wRZ" id="7M4-g6-QRM"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="109.12322274881517"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
